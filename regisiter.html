@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>898商城登陆界面</title>
+<link rel="stylesheet" type="text/css" href="style/base.css">
+<link rel="stylesheet" type="text/css" href="style/login.css">
+</head>
+
+<body>
+<div id="login_top"></div>
+<div id="login_header">
+	<div class="login_header">
+    	<a href="#" class="fl"><img src="images/register_logo.png" alt="898商城--送到家"  title="898商城--送到家"></a>
+        <img src="images/login_pic1.jpg" class=" pic fr">
+        </div>
+</div>
+
+
+
+<!--register_main-->
+<div  class="register_main">
+	<!--register_tab_bt-->
+	<div class="register_tab_bt ">
+    	<ul class="fl">
+        	<li class="register_on"  id="tab1"  onClick="setview1(1)">手机注册</li>
+      		<li  id="tab2" onClick="setview1(2)">邮箱注册</li>
+      		<li  id="tab3" onClick="setview1(3)">用户名注册</li>
+        
+        </ul>
+    	<p  class="fr">您好，欢迎光临！   我已经注册，现在就 <a href="#" class="blue">登录</a></p>
+   
+    </div>
+    <!--register_tab_bt end-->
+    <!--register_tab_member-->
+    <div class="register_tab_member">
+    	<form action="#" method="post">
+        <!--mem1-->
+    	<div  id="mem1" class="dis">
+        	<div class="register_form1"> 
+                	<em class="fl">*</em>
+         		 	<input name="" type="text" value="手机号：请输入手机号" class="fl">
+          			<span class="yhm_ts fl"><i class="fl">i</i>请4-20位字111符，支持数字.字<br>母特殊符合组合</span><span class="icon_arrow"></span>
+													
+        	 </div>
+        	  <div class="register_form1 " style="margin-bottom:0;"> <em class="fl">*</em>
+          			<input name="" type="password"  placeholder="设置密码" class="fl" style=" border-bottom:0 none;">
+        		</div>
+                <div class="register_form1"> <em class="fl">*</em>
+                  <input name="" type="password"  placeholder="确认密码" class="fl">
+                </div>
+            	<div class="register_form1"> <em class="fl">*</em>
+              	<input name="" type="text"  placeholder="验证手机" class="fl"> <span class="fl email">或 <a href="#">邮箱注册</a></span>
+            	</div>
+                <div class="register_form1"> <em class="fl">*</em>
+                  <input name="" type="text"  placeholder="手机验证码" class="fl" style="width:148px;">
+                  <p  class="fl hqyzm"><a href="#">获取验证码</a></p>
+                </div>
+                <div class="register_form1"> 
+                  <span class="test fl"></span> 
+                  <span class="fl" style="margin-left:40px;">我已阅读并同意《898会员章程》《898购买协议》 </span> </div>
+       		 <div class="register_form1">
+          		<p  class="fl zc"><a href="#">注册</a></p>
+       		</div>
+        
+        
+        </div>
+         <!--mem1 end-->
+          <!--mem2-->
+    	<div  id="mem2" class="undis">
+          第二项
+        </div>
+         <!--mem2 end-->
+          <!--mem2-->
+        <div  id="mem3" class="undis">第三项</div>
+         <!--mem2 end-->
+    
+    	</form>
+    </div>
+	<!--register_tab_member end-->
+    
+</div>
+<!--交换背景图片js--> 
+<script type="text/javascript">
+			window.onload = function() {
+				var os = document.getElementsByClassName("test");
+				for(var i = 0;  i < os.length; i++){
+					var o = os[i];
+
+					o.onclick = function() {
+						var style = document.defaultView.getComputedStyle(this, null);
+						if(style.backgroundImage.indexOf("uncheck1.png") != -1){
+							this.style.backgroundImage = "url(images/check1.png)";
+						}else{
+							this.style.backgroundImage = "url(images/uncheck1.png)";
+						}
+						
+					}
+				}
+				
+			};
+			//切换tab菜单
+			function setview1(id){
+		
+		document.getElementById("tab1").className="";
+		document.getElementById("tab2").className="";
+		document.getElementById("tab3").className="";
+		document.getElementById("tab"+id).className="register_on"
+		document.getElementById("mem1").style.display="none";
+		document.getElementById("mem2").style.display="none";
+		document.getElementById("mem3").style.display="none";
+		document.getElementById("mem"+id).style.display="block";
+	
+		
+		}
+			
+	
+</script> 
+
+
+
+<!--交换背景图片 js--> 
+<script type="text/javascript">jQuery(".register_main").slide();</script>
+<!--register_main end-->
+<!--service开始-->
+<div id="service">
+  <dl class="fl">
+    <dt>正品有保证</dt>
+    <dd>产品保真</dd>
+    <dd>质量保证</dd>
+  </dl>
+  <dl class="fl">
+    <dt>即时送</dt>
+    <dd>五公里内</dd>
+    <dd>一小时送达</dd>
+  </dl>
+  <dl class="fl">
+    <dt>一站式服务</dt>
+    <dd>7*24小时服务</dd>
+    <dd>120分钟</dd>
+  </dl>
+</div>
+<!--service结束-->
+<div id="login_footer">
+  <p>您也可以下载 <span style="color:#ff3b3c;">手机客户端</span> 及时抢购，捷足先登立即下载手机客户端登录  随时随地快速购物</p>
+  <p><span>copyright©2016，郑州市中奥网络技术有限公司 版权所有</span> <span>增值电信业务经营许可证:豫B2-20110003</span> <span>豫ICP备10204747号</span></p>
+</div>
+</body>
+</html>

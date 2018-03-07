@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>898商城登陆界面</title>
+<link rel="stylesheet" type="text/css" href="style/base.css">
+<link rel="stylesheet" type="text/css" href="style/login.css">
+<script src="js/jquery1.42.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(e) {
+    
+ $(".sm").click(function(){
+	 
+	 $(".sm").hide();
+	 $(".sm_login").hide();
+	  $(".zh_wz").hide();
+	  $(".zh").show();
+	 $(".zh_login").show();
+	  $(".sm_wz").show();
+	 
+	 
+	 
+	 
+	 
+	 
+	 })	;
+
+$(".zh").click(function(){
+	 
+	 $(".zh").hide();
+	 $(".zh_login").hide();
+	  $(".sm_wz").hide();
+	  $(".sm").show();
+	 $(".sm_login").show();
+	  $(".zh_wz").show();
+	 
+
+	 })	;
+
+});
+
+
+</script>
+</head>
+
+<body>
+<div id="login_top"></div>
+<div id="login_header">
+	<div class="login_header">
+    	<a href="#" class="fl"><img src="images/login_logo.png" alt="898商城--送到家"  title="898商城--送到家"></a>
+        <img src="images/login_pic1.jpg" class=" pic fr">
+        </div>
+</div>
+<div class="login_register">
+   <a href="#"  class="fr">注册新帐号</a>
+   <p class="fr">您还不是会员？</p>
+</div>
+<!--login_main-->
+<div id="login_main">
+	<div class="login_main">
+    	<div class="login_main_left fl"><img src="images/login_pic2.jpg"></div>
+        <!--login_main_right-->
+    	<div class="login_main_right fr">
+        	<form action="#" method="post">
+            <!--zh_login-->
+        	<div class="zh_login">
+            	<h2>898 帐号登陆</h2>
+                <p class="input_txt">
+            		<input type="text" value="邮箱 / 用户名 / 已验证手机">
+        	   </p>
+               <p class="input_txt">
+               		<input type="password" placeholder="登陆密码">
+               </p>
+              <p class="input_check">
+              	<input type="checkbox" checked id="auto" class="fl">
+                <label for="auto" class="fl">自动登陆</label>
+                <span  class="fr"><a href="#">忘记密码？</a></span></p>
+              </p>
+              <p>
+              	<input type="submit" value="登陆">
+              </p>
+              <div class="hz_login">
+              		<h3>用合作网站帐号登录：</h3>
+                    <p><a href="#"><img src="images/login_icon11.jpg" /></a> <a href="#"><img src="images/login_icon2.jpg" /></a> <a href="#"><img src="images/login_icon3.jpg" /></a> <a href="#"><img src="images/login_icon4.jpg" /></a> <a href="#"><img src="images/login_icon5.jpg" /></a></p>
+              </div>
+            
+            </div>
+             <!--zh_login end-->
+             <!--sm_login-->
+            <div class="sm_login">
+            	<h2>手机扫码，安全登录</h2>
+                <div class="sm_wrap">
+                	<div class="sm_inner"><img src="images/foot_pic5.jpg"><img src="images/foot_pic6.jpg" ></div>
+                </div>
+            	<div class="sm-desc">
+                	<i class="iconfont1"></i>
+         		   <p>打开<a href="#">手机898</a> <span class="ft-gray">扫一扫登录</span></p>
+       			 </div>
+               <div  class="sm_pas"> <a href="#">密码登陆</a> <a href="#">免费注册</a></div>
+            </div>
+            <!--sm_login end-->
+        	</form>
+            
+            <ul class="right_top">
+            	<li class="zh"><img src="images/login_icon2.png"></li>
+            	<li class="sm"><img src="images/login_pic7.jpg"></li>
+                
+            
+            </ul>
+            
+            <div class="right_wz">
+            	<p class="sm_wz"><span>扫码登陆更安全</span><s></s></p>
+            	<p class="zh_wz"><span>密码登陆在这里</span><s></s></p>
+            </div>
+            
+                      
+        </div>
+    	<!--login_main_right-->
+    	<div class="wmai"><img src="images/login_pic3.png"></div>
+    </div>
+</div>
+<!--login_main end-->
+<!--service开始-->
+<div id="service">
+  <dl class="fl">
+    <dt>正品有保证</dt>
+    <dd>产品保真</dd>
+    <dd>质量保证</dd>
+  </dl>
+  <dl class="fl">
+    <dt>即时送</dt>
+    <dd>五公里内</dd>
+    <dd>一小时送达</dd>
+  </dl>
+  <dl class="fl">
+    <dt>一站式服务</dt>
+    <dd>7*24小时服务</dd>
+    <dd>120分钟</dd>
+  </dl>
+</div>
+<!--service结束-->
+<div id="login_footer">
+  <p>您也可以下载 <span style="color:#ff3b3c;">手机客户端</span> 及时抢购，捷足先登立即下载手机客户端登录  随时随地快速购物</p>
+  <p><span>copyright©2016，郑州市中奥网络技术有限公司 版权所有</span> <span>增值电信业务经营许可证:豫B2-20110003</span> <span>豫ICP备10204747号</span></p>
+</div>
+</body>
+</html>

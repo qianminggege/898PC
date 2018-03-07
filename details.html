@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="style/base.css">
+<link rel="stylesheet" type="text/css" href="style/details.css">
+<script src="js1/jquery.js"></script>
+    <script type="text/javascript" src="js1/shop_goodPic_base.js"></script> 
+    <script type="text/javascript" src="js1/lib.js"></script> 
+    <script type="text/javascript" src="js1/163css.js"></script>
+</head>
+
+<body>
+<div class="details_wrap w">
+
+	<div class="details_left">
+    	<!-- 商品展示 -->
+<div class="shop_goods_show">
+  <div class="shop_goods_show_left"> 
+    <!-- 京东商品展示 -->
+    <div id="preview">
+      <div class=jqzoom id="spec-n1" onClick="window.open('/')"><IMG height="350" src="images1/img04.jpg" jqimg="images1/img04.jpg" width="350"> </div>
+      <div id="spec-n5">
+        <div class=control id="spec-left"> <img src="images1/left.gif" /> </div>
+        <div id="spec-list">
+          <ul class="list-h">
+            <li><img src="images1/img01.jpg"> </li>
+            <li><img src="images1/img02.jpg"> </li>
+            <li><img src="images1/img03.jpg"> </li>
+            <li><img src="images1/img04.jpg"> </li>
+            <li><img src="images1/img01.jpg"> </li>
+            <li><img src="images1/img02.jpg"> </li>
+            <li><img src="images1/img03.jpg"> </li>
+            <li><img src="images1/img04.jpg"> </li>
+            <li><img src="images1/img01.jpg"> </li>
+            <li><img src="images1/img02.jpg"> </li>
+            <li><img src="images1/img03.jpg"> </li>
+            <li><img src="images1/img04.jpg"> </li>
+          </ul>
+        </div>
+        <div class=control id="spec-right"> <img src="images1/right.gif" /> </div>
+      </div>
+    </div>
+    <SCRIPT type=text/javascript>
+						$(function(){			
+						   $(".jqzoom").jqueryzoom({
+								xzoom:400,
+								yzoom:400,
+								offset:10,
+								position:"right",
+								preload:1,
+								lens:1
+							});
+							$("#spec-list").jdMarquee({
+								deriction:"left",
+								width:350,
+								height:56,
+								step:2,
+								speed:4,
+								delay:10,
+								control:true,
+								_front:"#spec-right",
+								_back:"#spec-left"
+							});
+							$("#spec-list img").bind("mouseover",function(){
+								var src=$(this).attr("src");
+								$("#spec-n1 img").eq(0).attr({
+									src:src.replace("\/n5\/","\/n1\/"),
+									jqimg:src.replace("\/n5\/","\/n0\/")
+								});
+								$(this).css({
+									"border":"2px solid #ff6600",
+									"padding":"1px"
+								});
+							}).bind("mouseout",function(){
+								$(this).css({
+									"border":"1px solid #ccc",
+									"padding":"2px"
+								});
+							});				
+						})
+						</SCRIPT> 
+    <!-- 京东商品展示 End --> 
+    
+  </div>
+  
+</div>
+<!-- 商品展示 End -->
+    
+    </div>
+    <div class="details_infor">
+    
+    	<p>	中粮我买网所售商品均经严格的供应商资质审查、商品审查、入库全检、出货全检流程。由于部分商品包装可能会更换，我买网所示商品图片仅作为参考，关于商品的更详尽信息如包装、产地、生产日期等，以收到商品实物为准。 查询此商品</p>
+    
+    
+    
+    
+    </div>
+
+</div>
+</body>
+</html>

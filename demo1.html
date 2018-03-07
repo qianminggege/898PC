@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+.father{ width:600px; background:rgba(255,0,255,1); /*height:300px;*/ /*overflow:hidden;*/ }
+.son1{ width:200px; height:200px; background:rgba(153,204,102,1); float:left;}
+.son2{ width:200px; height:200px; background:rgba(153,204,102,0.3); float:right;}
+.a1{ width:600px; height:400px; background: rgba(0,0,0,1); margin-top:20px;}
+.clearfix:after{ display:block; height:0; content:''; clear:both;}
+</style>
+</head>
+
+<body>
+<div class="father clearfix">
+	<div class="son1"></div>
+    <div class="son2"></div>
+    <div  style="clear:both;"></div>
+</div>
+<div class="a1">
+	<div class="red" style="margin-bottom:10px; width:200px; height:100px; background:rgba(255,0,0,1);"></div>
+    	<div class="blue" style="margin-top:30px; width:200px; height:100px; background:rgba(0,0,255,1);"></div>
+
+
+
+</div>
+</body>
+</html>
